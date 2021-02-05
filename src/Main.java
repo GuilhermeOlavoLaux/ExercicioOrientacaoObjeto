@@ -15,7 +15,7 @@ public class Main {
         Visualizacao[] view = new Visualizacao[6]; //criando a visualização de um inscrito em um vídeo
         view[0] = new Visualizacao(usuario[0], aula[2]);
 
-        view[0].avaliar(9); // avaliação do vídeo assistido pelo usuário Guilherme
+        view[0].avaliar(9); // avaliação do vídeo assistido pelo usuário Guilherme, declarando a nota
 
 
         System.out.print("Vídeo: ");
