@@ -7,7 +7,7 @@ public class Video implements AcoesVideo{
 
     public Video(String nome) {
         this.titulo = nome;
-        this.avaliacao = 1;
+        this.avaliacao = 0;
         this.views = 0;
         this.curtidas = 0;
         this.reproduzindo = false;
@@ -26,7 +26,9 @@ public class Video implements AcoesVideo{
     }
 
     public void setAvaliacao(int avaliacao) {
-        this.avaliacao = avaliacao;
+        int nova;
+        nova = ((this.avaliacao + avaliacao) / this.views);
+        this.avaliacao = nova;
     }
 
     public int getViews() {
